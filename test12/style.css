@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.부모1 {
+    background-color: rgb(207, 132, 158);
+    width: 1000px;
+    margin: 30px auto;
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+
+.부모1 .자식1 {
+    position: relative;
+    background-color: aqua;
+    width: 32%;
+    height: 20px;
+    float: left;
+    margin-right: 2%;
+    padding: 40px 0;
+    text-align: center;
+    background-image: url(https://i.pinimg.com/474x/9e/ef/d5/9eefd5cc1611cd0309bd5d199257be60.jpg);
+    background-size: 185px;
+    overflow: hidden;
+}
+
+.부모1 .자식1 .나쁜자식 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0%;
+    bottom: 0%;
+    top: 0%;
+    background-image: url(https://cdn.logojoy.com/wp-content/uploads/2019/01/25131742/text_logo_13.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    transform: scale(0);
+}
+
+.부모1 .자식1:hover .나쁜자식 {
+    transform: scaleX(1);
+    /* 1=100 */
+}
+
+
+.부모1 .자식2 {
+    position: relative;
+    background-color: bisque;
+    width: 32%;
+    height: 20px;
+    float: left;
+    margin-right: 2%;
+    padding: 40px 0;
+    text-align: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ATmtbmkXUjAny0SWI5FNp9CxzuDDVomirQ&usqp=CAU);
+    background-size: 160px;
+}
+
+.부모1 .자식2 .나쁜자식 {
+    background-color: darksalmon;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* width:100%; height: 100%; */
+    right: 0%;
+    bottom: 0%;
+    /* 이렇게 하려면 높이 넓이 지워야함 */
+    background-image: url(https://i.pinimg.com/236x/72/f0/0f/72f00f720c1ec8a889942bcecb28c51b--we-heart-it-victor.jpg);
+    background-size: cover;
+    opacity: 0%;
+    /* 투명도 1-100% 0=안보임 */
+    transition: 0.3s;
+}
+
+.부모1 .자식2:hover .나쁜자식 {
+    opacity: 1;
+}
+
+.부모1 .자식3 {
+    position: relative;
+    background-color: blueviolet;
+    width: 32%;
+    height: 20px;
+    float: left;
+    padding: 40px 0;
+    text-align: center;
+    background-image: url(https://t3.ftcdn.net/jpg/04/90/71/36/360_F_490713650_EyRxtPVCNtAuKGIm9gCRjF6bjrYo6lYP.jpg);
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+.부모1 .자식3 .나쁜자식2 {
+    background-color: aliceblue;
+    position: absolute;
+    left: -100%;
+    top: 0%;
+    width: 100%;
+    top: 0;
+    background-image: url(https://i.pinimg.com/736x/20/38/c4/2038c43bfd6dcf96eb6c7db5f86737ee.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+.부모1 .자식3:hover .나쁜자식2 {
+    left: 0;
+}
+
+/* 왼쪽에서 오른 사진 나오게 하려면 왼-100% */
+
+.부모2 {
+    background-color: darkgoldenrod;
+    width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.부모2 .강아지1 {position: relative;
+    background-color: aqua;
+    width: 49%;
+    float: left;
+    height: 20px;
+    margin-right: 2%;
+    padding: 40px 0;
+    text-align: center;
+    overflow: hidden;
+   
+}
+
+.부모2 .강아지1 .나쁜자식{
+    position: absolute;
+left: 0; top: 0; width: 100%; height: 100%;
+background-image: url(https://img.freepik.com/free-vector/hot-pink-aesthetic-grid-pattern-background_53876-99198.jpg);
+background-size: cover;
+transition: 0.5s ease;
+transform: scale(0) rotate(720deg)
+}
+
+
+.부모2 .강아지1:hover .나쁜자식 {
+    transform: scale(105%) rotate(0deg) 
+}
+
+.부모2 .강아지2 {position: relative;
+    background-color: aquamarine;
+    width: 49%;
+    float: left;
+    height: 20px;
+    padding: 40px 0;
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/5c/6d/1a/5c6d1a2c5d000779043000817dfb43a7.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.부모2 .강아지2 .나쁜자식 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0%;
+    bottom: 0%;
+    top: 0%;
+    background-image: url(https://cdn.logojoy.com/wp-content/uploads/2019/01/25131742/text_logo_13.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    transform: scale(1);
+}
+.부모2 .강아지2:hover .나쁜자식{transform: scale(0);
+}
