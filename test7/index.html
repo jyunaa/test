@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .본체 {
+            background-color: aquamarine;
+            width:300px;
+            text-align: center;/* 블록요소를 가운데 정렬 블록은 한줄씩 생겨서 옆으로 두개의 블록 나열불가능한데 인라인으로 바꾸면 옆으로 나열가능*/
+            margin:auto; 
+            /* //나의 자손중에 인라인요소가 있거든 가운데 맞추겠다 
+            //글자는 인라인요소이다  */
+    }
+    .본체::before{content:"비포" ;background-color:#d56767;display: block;}
+    /* 비포는 본체 바로앞에 */
+    .본체::after{content:"에프터";background-color: #5b5bcf;display: block;}
+    /* 에프터는 본체 맨끝에 */
+    .본체2{}
+   /*  인라인요소 
+    넓이의 개념이 없음. 글자의 크기만큼만 공간을 차지함
+    padding margin의 상하값이 적용이 안됨 */
+    .본체2 span{
+        background-color: hsl(0, 85%, 49%);
+        color: aliceblue;
+        padding:20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="본체">본체</div>
+    <div class="본체2">본체<span>2</span></div>
+</body>
+</html>
