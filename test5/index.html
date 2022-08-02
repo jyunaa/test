@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 정렬 </title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .아빠{ 
+            background-color:#a3dfff ;
+            width:900px;
+        }
+          /* 띄워쓰기=자손중에 찾기/꺽새>= 자식중에서 찾기 */
+         /*  ★block 요소
+          부모의 넓이를 모두 차지 (display:block;) */
+        .아빠 .첫째자식{
+            float: right;/*  float+방향은 옆으로정렬 (하면 아빠역할삭제됨)*/
+            background-color: rgb(139, 139, 255);
+            width:300px;
+        }
+        .아빠 .둘째자식{
+            float: right;
+            background-color: #c1d8ff;
+            width:300px;
+        }
+        .아빠 .세째자식{
+            float: right;
+            background-color: #9292b9;
+            width:300px;
+        }
+        .아빠 .치매약 {
+            clear:both; /* float이 l/r 섞이면 both사용 */
+        }
+        .작은아빠{
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="아빠">
+        <div class="첫째자식">첫째자식</div>
+        <div class="둘째자식">둘째자식</div>
+        <div class="세째자식">세째자식</div>
+        <div class="치매약"></div>
+    </div>
+    <div class="작은아빠">작은아빠</div>
+    
+</body>
+</html>
