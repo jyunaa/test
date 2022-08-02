@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .family {
+            background-color: bisque;
+            width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+.family>div {
+            width: 32%;
+            padding: 20px 0px;
+            margin-right: 2%;
+            float: left;
+            transition: 0.3s
+        }
+
+        .family>div:hover {
+            border-radius: 50px;
+        }
+
+        .bro::after {
+            content: "";
+            display: block;
+            clear: both
+        }
+
+        .family .mom {
+            background-color: crimson;
+            background-image: url(img1.jpg);
+            /* 이미지는 사이트연결을 해야 뜸 */
+            background-size: 100%;
+            box-sizing: border-box;
+            letter-spacing: 5px;
+            transition: 0.3s;
+        }
+
+        .mom:hover {
+            background-image: url(img1.jpg);
+            background-size: 120%;
+        }
+
+        .family .dad {
+            background-color: aquamarine;
+            background-image: url(img2.jpg);
+            background-size: 100%;
+            box-sizing: border-box;
+            letter-spacing: 5px;
+            transition: 0.3s;
+        }
+
+        .dad:hover {
+            background-image: url(img2.jpg);
+            background-size: 120%;
+        }
+
+        .family .sis {
+            background-color: cadetblue;
+            margin-right: 0%;
+            background-image: url(img3.jpg);
+            background-size: 100%;
+            box-sizing: border-box;
+            letter-spacing: 5px;
+            transition: 0.3s;
+        }
+
+        .sis:hover {
+            background-image: url(img3.jpg);
+            background-size: 120%;
+        }
+
+    </style>   
+</head>
+
+<body>
+    <div class="family bro">
+        <div class="mom">mom</div>
+        <div class="dad">dad</div>
+        <div class="sis">sis</div>
+    </div>
+
+</body>
+
+</html>
