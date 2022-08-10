@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #d3eefe;
+}
+
+.피자 {
+    height: 150vh;
+}
+
+.피자 h2 {
+    font-size: 70px;
+    color: #43515c;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.피자 .이미지전체 {
+    position: relative;
+}
+
+.피자 .이미지전체>img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.피자 .이미지전체 .재료 {
+    position: absolute;
+    width: 400px;
+    height: 530px;
+    top: 424px;
+    left: 50%;
+    transform: translate(calc(-50% - 200px));
+}
+
+.피자 .이미지전체 .재료 img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0, 2.73);
+}
+
+.피자 .이미지전체 .재료 img.양파 {
+    left: 76px;
+    top: -7px;
+}
+
+.피자 .이미지전체 .재료:hover img.양파 {
+    left: 224px;
+    top: -7px;
+}
+
+.피자 .이미지전체 .재료 img.허브 {
+    left: 2px;
+    top: 74px;
+}
+
+.피자 .이미지전체 .재료:hover img.허브 {
+    left: 100px;
+    top: -46px;
+}
+
+.피자 .이미지전체 .재료 img.밀가루 {
+    left: -4px;
+    top: 198px;
+}
+
+.피자 .이미지전체 .재료:hover img.밀가루 {
+    left: 113px;
+    top: 98px;
+}
+
+.피자 .이미지전체 .재료 img.후추 {
+    left: 102px;
+    top: 130px;
+}
+
+.피자 .이미지전체 .재료:hover img.후추 {
+    left: 286px;
+    top: 130px;
+}
+
+.피자 .이미지전체 .재료 img.마늘 {
+    left: -59px;
+    top: 284px;
+}
+
+.피자 .이미지전체 .재료:hover img.마늘 {
+    left: 223px;
+    top: 236px;
+}
+
+.피자 .이미지전체 .재료 img.고추 {
+    left: -43px;
+    top: 369px;
+}
+
+.피자 .이미지전체 .재료:hover img.고추 {
+    left: 37px;
+    top: 353px;
+}
+
+.피자 .이미지전체 .재료 img.피망 {
+    left: -132px;
+    top: 145px;
+}
+
+.피자 .이미지전체 .재료:hover img.피망 {
+    left: -2px;
+    top: 234px;
+}
+
+.피자 .이미지전체 .재료 img.토마토 {
+    left: -68px;
+    top: -16px;
+}
+
+.피자 .이미지전체 .재료:hover img.토마토 {
+    left: -35px;
+    top: 84px;
+}
+
+.피자 .이미지전체 .재료 img.치즈 {
+    left: 4px;
+    top: 329px;
+}
+
+.피자 .이미지전체 .재료:hover img.치즈 {
+    left: 110px;
+    top: 354px;
+}
